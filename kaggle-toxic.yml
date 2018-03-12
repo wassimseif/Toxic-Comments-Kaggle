@@ -5,10 +5,12 @@ windows:
   - main:
       layout: main-vertical
       panes:
-        - 
+        - main:
+            - source activate kaggle-toxic
         - notebook :
             - source activate kaggle-toxic
             - jupyter notebook
-        -
+        - git :
+            - git status 
         - htop
   - shell:
