@@ -3,13 +3,12 @@ root:  ~/Desktop/Developer/Machine-Learning/Kaggle Competitions/Toxic-Comment
 tmux_detached: false
 windows:
   - main:
-      layout: tiled
+      layout: main-vertical
       panes:
-        -  main:
+        - 
+        - notebook :
             - source activate kaggle-toxic
             - jupyter notebook
-        -
-        -
         -
         - htop
   - shell:
