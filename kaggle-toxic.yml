@@ -1,0 +1,16 @@
+name: kaggle-toxic
+root:  ~/Desktop/Developer/Machine-Learning/Kaggle Competitions/Toxic-Comment
+tmux_detached: false
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        - main:
+            - source activate kaggle-toxic
+        - notebook :
+            - source activate kaggle-toxic
+            - jupyter notebook
+        - git :
+            - git status 
+        - htop
+  - shell:
