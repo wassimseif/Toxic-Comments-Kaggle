@@ -14,7 +14,3 @@ def one_hot_encode(label):
             vector[i] = 1 
     
     return vector
-            
-        
-
-    
