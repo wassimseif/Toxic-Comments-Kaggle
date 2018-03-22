@@ -9,14 +9,6 @@ def load_embeddings():
     model = gensim.models.KeyedVectors.load_word2vec_format('embeddings/GoogleNews-vectors-negative300.bin', binary=True)
     return model 
 
-def one_hot_encode(label):
-    vector = np.zeros(shape=(6,))
-    for i in range(len(labels)):
-        if label == labels[i]:
-            vector[i] = 1 
-    
-    return vector
-
 def load_data_set():
 
     df = pd.read_csv('data/train.csv')
@@ -30,17 +22,16 @@ def load_data_set():
     df['insult'].fillna(0)
 
 
+    labels =   df[['toxic','severe_toxic','obscene','threat','insult','identity_hate']].values
+    make_one_hot_encoded(df=df)
 
-    comments = df['comment_text']
-    toxic = df['toxic']
-    severe_toxic = df['severe_toxic']
-    obscene = df['obscene']
-    threat = df['threat']
-    insult = df['insult']
-    identity_hate = df['identity_hate']
-    labels = np.vstack([toxic, severe_toxic, obscene,threat,insult,identity_hate], axis = 0)
-    print(labels.shape)
 
+
+def make_one_hot_encoded(df):
+    for index , row in df.iterrows():
+        if row == np.zeros(shape=(5,0)):
+            print('Index {} is clean '.format(index))
+            return
 
 def main():
     # My code here
