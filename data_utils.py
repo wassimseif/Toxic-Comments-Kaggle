@@ -12,7 +12,7 @@ def load_embeddings():
 def load_data_set():
 
     df = pd.read_csv('data/train.csv')
-    df.drop(['id'], axis=1)
+    df = df.drop(['id'], axis=1)
 
     df['comment_text'].fillna('unknown')
     df['toxic'].fillna(0)
@@ -29,9 +29,9 @@ def load_data_set():
 
 def make_one_hot_encoded(df):
     for index , row in df.iterrows():
-        if row == np.zeros(shape=(5,0)):
-            print('Index {} is clean '.format(index))
-            return
+        if (row[1:7].values != np.zeros(shape=(6,) , dtype= int)).any() :
+            print('Index {} is toxic '.format(index))
+
 
 def main():
     # My code here
