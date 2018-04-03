@@ -1,3 +1,4 @@
 test*
 train*
 GoogleNews-vectors-negative300.bin
+data/
