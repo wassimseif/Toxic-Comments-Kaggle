@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/Toxic-Comments-Kaggle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Toxic-Comments-Kaggle.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Toxic_Comments_Kaggle$data_utils.coverage" NAME="data_utils Coverage Results" MODIFIED="1522812883141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Toxic_Comment$data_utils.coverage" NAME="data_utils Coverage Results" MODIFIED="1522784771550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Toxic_Comments_Kaggle$data_utils.coverage" NAME="data_utils Coverage Results" MODIFIED="1521787567861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Toxic_Comment$Toxic_Comment.coverage" NAME="Toxic-Comment Coverage Results" MODIFIED="1521561796304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -48,12 +47,12 @@
       <file leaf-file-name="data_utils.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+            <state relative-caret-position="218">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <element signature="e#349#762#0" />
-                <element signature="e#796#2021#0" />
-                <element signature="e#1985#2503#0" />
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#777#1922#0" />
+                <element signature="e#1960#2478#0" />
               </folding>
             </state>
           </provider>
@@ -89,6 +88,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,7 +105,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,24 +233,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935324" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32935324" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32935324" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32820514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3273632" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1929182" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19488817" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
-      <window_info active="true" anchor="right" x="647" y="37" width="626" height="1005" id="SciView" order="4" sideWeight="0.49851632" visible="true" weight="0.3821734" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3283582" />
+      <window_info anchor="right" x="647" y="37" width="626" height="1005" id="SciView" order="4" sideWeight="0.49851632" weight="0.38178915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.42051283" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2885572" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -275,6 +273,11 @@
           <line>100</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_utils.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -283,7 +286,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -392,12 +395,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_utils.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#777#1922#0" />
+            <element signature="e#1960#2478#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="e#349#762#0" />
-            <element signature="e#796#2021#0" />
-            <element signature="e#1985#2503#0" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#777#1922#0" />
+            <element signature="e#1960#2478#0" />
           </folding>
         </state>
       </provider>
@@ -414,9 +436,9 @@
         <state relative-caret-position="416">
           <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding>
-            <element signature="e#349#762#0" />
-            <element signature="e#796#2021#0" />
-            <element signature="e#1985#2503#0" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#777#1922#0" />
+            <element signature="e#1960#2478#0" />
           </folding>
         </state>
       </provider>
@@ -433,9 +455,9 @@
         <state relative-caret-position="112">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
-            <element signature="e#349#762#0" />
-            <element signature="e#796#2021#0" />
-            <element signature="e#1985#2503#0" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#777#1922#0" />
+            <element signature="e#1960#2478#0" />
           </folding>
         </state>
       </provider>
@@ -459,9 +481,9 @@
         <state relative-caret-position="476">
           <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding>
-            <element signature="e#349#762#0" />
-            <element signature="e#796#2021#0" />
-            <element signature="e#1985#2503#0" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#777#1922#0" />
+            <element signature="e#1960#2478#0" />
           </folding>
         </state>
       </provider>
@@ -478,9 +500,9 @@
         <state relative-caret-position="306">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#349#762#0" />
-            <element signature="e#796#2021#0" />
-            <element signature="e#1985#2503#0" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#777#1922#0" />
+            <element signature="e#1960#2478#0" />
           </folding>
         </state>
       </provider>
@@ -608,12 +630,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        <state relative-caret-position="218">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#349#762#0" />
-            <element signature="e#796#2021#0" />
-            <element signature="e#1985#2503#0" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#777#1922#0" />
+            <element signature="e#1960#2478#0" />
           </folding>
         </state>
       </provider>

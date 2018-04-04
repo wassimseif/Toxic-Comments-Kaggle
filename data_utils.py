@@ -1,16 +1,22 @@
 import gensim
 import pandas as pd 
 import numpy as np
-
+import os
 labels = ['toxic','severe_toxic','obscene','threat','insult','identity_hate']
-
+PATH_TO_FORMATTED_CSV = 'data/formatted.csv'
 def load_embeddings():
     model = gensim.models.KeyedVectors.load_word2vec_format('embeddings/GoogleNews-vectors-negative300.bin', binary=True)
     return model 
 
 def format_original_dataset():
+    if os.path.exists(PATH_TO_FORMATTED_CSV):
+        df = pd.read_csv(PATH_TO_FORMATTED_CSV)
+        load_dataset(df)
+        return
+
 
     df = pd.read_csv('data/train.csv')
+
     df = df.drop(['id'], axis=1)
 
     df['comment_text'].fillna('unknown')
@@ -23,9 +29,10 @@ def format_original_dataset():
 
 
     labels =   df[['toxic','severe_toxic','obscene','threat','insult','identity_hate']].values
-    make_one_hot_encoded(df=df)
+    make_csv_one_hot_encoded(df=df)
+    format_original_dataset()
 
-def format_toxic(row):
+def _format_toxic(row):
 
     rows = []
     if row['toxic'] == 1 :
@@ -71,7 +78,7 @@ def format_toxic(row):
     return rows
 
 
-def make_one_hot_encoded(df):
+def make_csv_one_hot_encoded(df):
 
     formatted_df = df.copy()
 
@@ -80,7 +87,7 @@ def make_one_hot_encoded(df):
             print(index)
         if (row[1:7].values != np.zeros(shape=(6,) , dtype= int)).any() :
 
-            new_rows = format_toxic(row)
+            new_rows = _format_toxic(row)
 
             formatted_df = formatted_df.drop(df.index[index])
             formatted_df = formatted_df.append(new_rows)
@@ -89,19 +96,15 @@ def make_one_hot_encoded(df):
     formatted_df = formatted_df.sample(frac=1).reset_index(drop=True)
     formatted_df.to_csv('data/formatted.csv')
 
-def load_formatted_dataset():
-    df = pd.read_csv('data/final_train.csv')
 
-    return df
-
-def load_dataset():
-    df = load_formatted_dataset()
+def load_dataset(df):
+    df = format_original_dataset()
     comments = df['comment_text']
     labels = df.iloc[:, 2:8].as_matrix()
     print(comments.shape)
 
 def main():
-    comments  , labels =  load_dataset()
+    comments  , labels =  format_original_dataset()
 
     pass
 
