@@ -2,18 +2,19 @@ import gensim
 import pandas as pd 
 import numpy as np
 import os
+import tensorflow as tf
+from sklearn.preprocessing import OneHotEncoder
+
 labels = ['toxic','severe_toxic','obscene','threat','insult','identity_hate']
 PATH_TO_FORMATTED_CSV = 'data/formatted.csv'
 def load_embeddings():
     model = gensim.models.KeyedVectors.load_word2vec_format('embeddings/GoogleNews-vectors-negative300.bin', binary=True)
     return model 
 
-def format_original_dataset():
+def load_dataset():
     if os.path.exists(PATH_TO_FORMATTED_CSV):
         df = pd.read_csv(PATH_TO_FORMATTED_CSV)
-        load_dataset(df)
-        return
-
+        return _to_tensors(df)
 
     df = pd.read_csv('data/train.csv')
 
@@ -28,9 +29,8 @@ def format_original_dataset():
     df['identity_hate'].fillna(0)
 
 
-    labels =   df[['toxic','severe_toxic','obscene','threat','insult','identity_hate']].values
     make_csv_one_hot_encoded(df=df)
-    format_original_dataset()
+    load_dataset()
 
 def _format_toxic(row):
 
@@ -97,14 +97,23 @@ def make_csv_one_hot_encoded(df):
     formatted_df.to_csv('data/formatted.csv')
 
 
-def load_dataset(df):
-    df = format_original_dataset()
-    comments = df['comment_text']
+def _to_tensors(df):
+    comments = df['comment_text'].as_matrix()
+
     labels = df.iloc[:, 2:8].as_matrix()
-    print(comments.shape)
+
+    comments = tf.data.Dataset.from_tensor_slices(comments)
+
+    labels = tf.data.Dataset.from_tensor_slices(labels)
+
+    return comments, labels
+
 
 def main():
-    comments  , labels =  format_original_dataset()
+    comments  , labels =  load_dataset()
+
+    print(comments.output_shapes)
+    print(labels.output_shapes)
 
     pass
 
