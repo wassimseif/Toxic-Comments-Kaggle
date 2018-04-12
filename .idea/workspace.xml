@@ -383,7 +383,7 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/data/DataHandler.py</url>
+          <url />
           <line>89</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
