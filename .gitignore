@@ -3,3 +3,4 @@ train*
 GoogleNews-vectors-negative300.bin
 data/
 .idea/
+crawl-300d-2M.vec
