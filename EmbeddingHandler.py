@@ -1,6 +1,5 @@
 import gensim
 from gensim.models import Word2Vec
-from tensorflow.contrib.keras.api.keras.preprocessing.text import Tozkenizer
 
 class EmbeddingHandler:
     def __init__(self):

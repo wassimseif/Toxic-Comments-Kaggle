@@ -2,8 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-
-
+from tensorflow.contrib.keras.api.keras.preprocessing.text import Tokenizer
 class DataHandler:
 
     def __init__(self, path_to_data_folder):
@@ -102,3 +101,10 @@ class DataHandler:
         labels = tf.data.Dataset.from_tensor_slices(labels)
         labels = labels.batch(3)
         return  comments , labels
+
+    def tokenize(self,comments):
+        comments , _ = self.load_dataset()
+        token = Tokenizer(
+            num_words= 10000
+        )
+        token.fit_on_sequences(comments)
