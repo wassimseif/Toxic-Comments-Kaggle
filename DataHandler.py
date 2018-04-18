@@ -47,7 +47,7 @@ class DataHandler:
         formatted_df = formatted_df.sample(frac=1).reset_index(drop=True)
         formatted_df.to_csv('data/formatted.csv')
 
-    def _format_toxic(row):
+    def _format_toxic(self,row):
 
         rows = []
         if row['toxic'] == 1:
@@ -94,17 +94,25 @@ class DataHandler:
         df = pd.read_csv(os.path.join(self.path_to_data_folder, 'formatted.csv'))
 
         comments = df['comment_text']
+
+        self.tokenize(comments)
+
+
+
         comments = tf.data.Dataset.from_tensor_slices(comments)
         comments = comments.batch(3)
 
-        labels = df.il11111oc[:, 2:8].as_matrix()
+        labels = df.iloc[:, 2:8].as_matrix()
         labels = tf.data.Dataset.from_tensor_slices(labels)
         labels = labels.batch(3)
+
         return  comments , labels
 
     def tokenize(self,comments):
-        comments , _ = self.load_dataset()
+        print('Comments shape is {}'.format(comments.shape))
+
         token = Tokenizer(
             num_words= 10000
         )
-        token.fit_on_sequences(comments)
+        tokenized_comments = token.fit_on_texts(comments)
+        print('Comments shape is {}'.format(tokenized_comments.shape))
