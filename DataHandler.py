@@ -2,9 +2,15 @@ import os
 import pandas as pd
 import numpy as np
 import tensorflow as tf
+
 from tensorflow.contrib.keras.api.keras.preprocessing.text import Tokenizer
+from tensorflow.contrib.keras.api.keras.preprocessing import sequence
+
+
 class DataHandler:
 
+    vocab_size = 10000
+    max_sentence_len = 200
     def __init__(self, path_to_data_folder):
         self.path_to_data_folder = path_to_data_folder
 
@@ -47,7 +53,7 @@ class DataHandler:
         formatted_df = formatted_df.sample(frac=1).reset_index(drop=True)
         formatted_df.to_csv('data/formatted.csv')
 
-    def _format_toxic(self,row):
+    def _format_toxic(self, row):
 
         rows = []
         if row['toxic'] == 1:
@@ -97,8 +103,6 @@ class DataHandler:
 
         self.tokenize(comments)
 
-
-
         comments = tf.data.Dataset.from_tensor_slices(comments)
         comments = comments.batch(3)
 
@@ -106,14 +110,30 @@ class DataHandler:
         labels = tf.data.Dataset.from_tensor_slices(labels)
         labels = labels.batch(3)
 
-        return  comments , labels
+        return comments, labels
 
-    def tokenize(self,comments):
+    def tokenize(self, comments):
         print('Comments shape is {}'.format(comments.shape))
 
         token = Tokenizer(
-            num_words= 15000
+            num_words = self.vocab_size
         )
         token.fit_on_texts(comments)
-        commenst = token.texts_to_sequences(comments)
-        print('Comments shape is {}'.format(commenst.shape))
+
+        tokenized_comments = token.texts_to_sequences(comments)
+
+        tokenized_comments = sequence.pad_sequences(
+            sequences= tokenized_comments,
+            maxlen= self.max_sentence_len,
+            padding = 'post',
+            value = 0
+        )
+        
+
+
+
+
+
+
+
+
