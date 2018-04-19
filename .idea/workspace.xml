@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d890282-c5b3-477f-9ca2-c675196293e6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataHandler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,8 +12,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Toxic_Comment$data_utils.coverage" NAME="data_utils Coverage Results" MODIFIED="1524078415296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Toxic_Comments_Kaggle$data_utils.coverage" NAME="data_utils Coverage Results" MODIFIED="1524072543322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Toxic_Comment$data_utils.coverage" NAME="data_utils Coverage Results" MODIFIED="1523472040490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Toxic_Comment$Toxic_Comment.coverage" NAME="Toxic-Comment Coverage Results" MODIFIED="1521561796304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -34,20 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataHandler.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataHandler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="116" column="40" lean-forward="true" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/tensorflow/python/keras/_impl/keras/preprocessing/text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="362" column="28" lean-forward="true" selection-start-line="362" selection-start-column="28" selection-end-line="362" selection-end-column="28" />
+            <state relative-caret-position="549">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -55,7 +44,7 @@
       <file leaf-file-name="data_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="112">
               <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
@@ -64,7 +53,7 @@
       <file leaf-file-name="EmbeddingHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EmbeddingHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="16">
               <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -126,6 +115,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,7 +127,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,15 +156,15 @@
   </component>
   <component name="RunManager">
     <configuration name="data_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Toxic-Comments-Kaggle" />
+      <module name="Toxic-Comment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -272,24 +261,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935324" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32923076" />
-      <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="5" sideWeight="0.50369275" side_tool="true" visible="true" weight="0.38178915" />
+      <window_info anchor="right" x="0" y="0" width="417" height="858" id="Documentation" order="5" sideWeight="0.5067669" side_tool="true" weight="0.42551893" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32935324" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3283582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32636815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32636815" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21831736" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24603175" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
-      <window_info anchor="right" x="647" y="37" width="626" height="1005" id="SciView" order="4" sideWeight="0.49630722" visible="true" weight="0.38178915" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.4994872" weight="0.32905984" />
+      <window_info anchor="right" x="647" y="37" width="626" height="1005" id="SciView" order="4" sideWeight="0.49323308" weight="0.42551893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31840795" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31794873" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -302,25 +290,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20695971" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935324" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32935324" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3271795" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32935324" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
       <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="5" sideWeight="0.5014837" side_tool="true" weight="0.33333334" />
       <window_info anchor="right" id="Database" order="3" weight="0.32960597" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32935324" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" x="647" y="37" width="626" height="1005" id="SciView" order="4" sideWeight="0.49851632" weight="0.38178915" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.28820512" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32935324" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +319,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DataHandler.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -341,7 +336,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -394,60 +389,58 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>print('Comments shape is {}'.format(comments.shape))</expression-string>
+        <expression-string>print(commenst[0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>token</expression-string>
+        <expression-string>print(comments[0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._check_if_formatted_csv_exsits()</expression-string>
+        <expression-string>print(token.word_index['provoking'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>labels.shape</expression-string>
+        <expression-string>print(token.word_index['me'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>print(labels.shape)</expression-string>
+        <expression-string>print(token.word_index['then'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>print(shape(labels))</expression-string>
+        <expression-string>print(token.word_index['the'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>print(type(labels))</expression-string>
+        <expression-string>print(token.word_index['shame'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>type(labels)</expression-string>
+        <expression-string>print(token.word_index['thing'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>labels</expression-string>
+        <expression-string>print(token.word_index['more'])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>print(token.word_index['one'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_utils.py" />
     <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
@@ -606,7 +599,7 @@
     <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/gensim/models/keyedvectors.py" />
     <entry file="file://$PROJECT_DIR$/EmbeddingHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="16">
           <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -614,38 +607,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/pandas/util/_decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="232" column="8" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="716" column="17" lean-forward="true" selection-start-line="716" selection-start-column="17" selection-end-line="716" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/pandas/util/_decorators.py" />
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/pandas/io/parsers.py" />
     <entry file="file://$PROJECT_DIR$/data_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="112">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/tensorflow/python/keras/_impl/keras/preprocessing/text.py" />
+    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/deep-learning/lib/python3.5/site-packages/tensorflow/python/keras/_impl/keras/preprocessing/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="209" column="6" selection-start-line="209" selection-start-column="6" selection-end-line="209" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="116" column="40" lean-forward="true" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/anaconda3/envs/kaggle-toxic/lib/python3.5/site-packages/tensorflow/python/keras/_impl/keras/preprocessing/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="362" column="28" lean-forward="true" selection-start-line="362" selection-start-column="28" selection-end-line="362" selection-end-column="28" />
+        <state relative-caret-position="549">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>

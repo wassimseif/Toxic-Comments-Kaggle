@@ -112,7 +112,8 @@ class DataHandler:
         print('Comments shape is {}'.format(comments.shape))
 
         token = Tokenizer(
-            num_words= 10000
+            num_words= 15000
         )
-        tokenized_comments = token.fit_on_texts(comments)
-        print('Comments shape is {}'.format(tokenized_comments.shape))
+        token.fit_on_texts(comments)
+        commenst = token.texts_to_sequences(comments)
+        print('Comments shape is {}'.format(commenst.shape))
