@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-
 from tensorflow.contrib.keras.api.keras.preprocessing.text import Tokenizer
 from tensorflow.contrib.keras.api.keras.preprocessing import sequence
 
